@@ -28,6 +28,7 @@ struct IngredientsView: View {
                 Text("Ingredients")
                     .font(.system(size: 30))
                     .foregroundStyle(.white)
+                    .fontWeight(.bold)
             }
             .padding()
             VStack(alignment: .leading, spacing: 20) {
@@ -43,6 +44,11 @@ struct IngredientsView: View {
             .fontWeight(.semibold)
             .font(.title2)
             .fontDesign(.rounded)
+            .padding()
+            .background(.white)
+            .cornerRadius(20)
+            .shadow(color: .green, radius: 5, x: 2, y: 5)
+            
             Spacer()
             HStack {
                 Button("x1") {
@@ -80,7 +86,7 @@ struct IngredientsView: View {
             Spacer()
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(LinearGradient(colors: [.pink, .white], startPoint: .top, endPoint: .bottom))
+        .background(LinearGradient(colors: [.pink, .white], startPoint: .topLeading, endPoint: .bottomTrailing))
         
     }
     

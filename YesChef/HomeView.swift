@@ -28,7 +28,7 @@ struct HomeView: View {
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(LinearGradient(colors: [.pink, .white], startPoint: .top, endPoint: .bottom))
+        .background(LinearGradient(colors: [.pink, .white], startPoint: .topLeading, endPoint: .bottomTrailing))
     }
 }
 
